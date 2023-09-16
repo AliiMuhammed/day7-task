@@ -1,0 +1,40 @@
+nav{
+    background-color: var(--second-color);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    position: fixed;
+    width: 100%;
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container .logo{
+    font-size: 2rem;
+    
+    font-weight: 700;
+}
+nav .container  a{
+    color: #fff;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+nav .container  .links ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+nav .container  .links ul li:not(:last-child){
+    margin-right: 2rem;
+}
+
+nav .container  .links ul li:hover a{
+    color: #dddd;
+}
