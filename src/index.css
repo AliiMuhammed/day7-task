@@ -1,10 +1,11 @@
 /* start variables */
-:root{
-  --main-color:#DC143C;
-  --second-color:#007FFF;
-  --bg-color:#000000;
+:root {
+  --main-color: #DC143C;
+  --second-color: #007FFF;
+  --bg-color: #000000;
   --main-transition: all 0.3s ease-in-out;
 }
+
 /* end variables */
 
 /* start global rules */
@@ -62,4 +63,19 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+section {
+  margin-top:10rem;
+  
+}
+
+.alert{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;  
+}
+.alert-denger{
+  width: 60%;
 }

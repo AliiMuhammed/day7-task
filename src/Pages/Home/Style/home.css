@@ -1,0 +1,51 @@
+.home-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home-section .container .movies-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 2rem;
+}
+/* small */
+@media (max-width:767px) {
+    .home-section .container .movies-card{
+        width: 80%;
+        grid-template-columns:1fr;
+        gap: 2rem;
+    }
+  }
+  /* medium */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .home-section .container .movies-card {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.lang-btn{
+    margin-bottom: 2rem ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.lang-btn button{
+    background-color: var(--second-color);
+    padding: 0.5rem 1rem ;
+    color: #fff;
+    font-size: 1.2rem;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.lang-btn button:hover{
+    background-color: transparent;
+    border-color: var(--second-color);
+}

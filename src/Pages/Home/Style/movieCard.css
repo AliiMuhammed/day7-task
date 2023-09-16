@@ -1,0 +1,61 @@
+.movie-card{
+    border: none;
+    font-size: 1rem;
+}
+.movie-card .movie-img{
+    overflow: hidden;
+}
+.movie-card .card-img-top{
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.movie-card .card-img-top:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.movie-card .card-title{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+/* small */
+@media (max-width:767px) {
+    .movie-card .card-title{
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+  }
+
+  
+.movie-card .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.movie-card .card-body .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.movie-card .card-body .details .rate{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.movie-card .card-body .details .rate svg{
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
